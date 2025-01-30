@@ -7,6 +7,7 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
 
+
     public float bulletAmount = 15;
 
     public float bulletForce;

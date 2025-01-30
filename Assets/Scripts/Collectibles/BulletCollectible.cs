@@ -6,6 +6,11 @@ public class BulletCollectible : Collectible
 {
     public Weapon Weapon;
 
+    public void Start()
+    {
+        Weapon = FindObjectOfType<Weapon>();
+    }
+
     public override void ApplyEffect(GameObject player)
     {
         Weapon.bulletAmount += Random.Range(3,5);

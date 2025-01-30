@@ -99,7 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 3441947972511812726, guid: f7f30d8f7e2271644b7b5345bb4d482f, type: 3}
   spawnInterval: 3
-  spawnDirection: {x: 0, y: -1}
+  spawnDirection: {x: 1, y: 0}
   launchSpeed: 5
-  spawnAmount: 4
+  spawnAmount: 999
   invokeDelay: 0
+  enemyLifeTime: 6

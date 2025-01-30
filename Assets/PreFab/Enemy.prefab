@@ -145,9 +145,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb4b118d15d6cf144abbb21ffe353952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammoCollectiblePrefab: {fileID: 4475402169823469848, guid: 96ff929ce1b46c9409d2e0c69b103c60, type: 3}
+  healthCollectiblePrefab: {fileID: 3290787763879550358, guid: 3021e07633249864a9c72e6876c91824, type: 3}
   enemyMaxHealth: 2
   enemyHealth: 0
   damage: 1
+  ammoDropChance: 0.3
+  healthDropChance: 0.1
 --- !u!50 &1061397746014204126
 Rigidbody2D:
   serializedVersion: 4

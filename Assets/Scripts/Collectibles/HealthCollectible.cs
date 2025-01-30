@@ -6,8 +6,16 @@ public class HealthCollectible : Collectible
 {
     public PlayerHealth PlayerHealth;
 
+    public void Start()
+    {
+        PlayerHealth = FindAnyObjectByType<PlayerHealth>();
+    }
+
     public override void ApplyEffect(GameObject player)
     {
-        PlayerHealth.playerHealth += 1;
+        if (PlayerHealth.playerHealth < PlayerHealth.maxHealth)
+        {
+            PlayerHealth.playerHealth += 1;
+        }
     }
 }

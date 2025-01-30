@@ -10,6 +10,7 @@ public class EnemySpawner : MonoBehaviour
     public float launchSpeed = 5f;
     public int spawnAmount;
     public float invokeDelay;
+    public float enemyLifeTime = 3f;
 
     void Start()
     {
@@ -31,6 +32,8 @@ public class EnemySpawner : MonoBehaviour
                 rb.velocity = spawnDirection.normalized * launchSpeed;
 
             }
+            Destroy(enemy,enemyLifeTime);
+
         }
         else { Destroy(gameObject); }
         
